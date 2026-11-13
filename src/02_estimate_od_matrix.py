@@ -3,8 +3,8 @@
 Urban Transit OD Matrix Estimator  —  IBB Raylı Sistem Edition
 =============================================================================
 Method : Principle of Diurnal Asymmetry + Conservation of Flow
-Input  : rayli_sistem_temiz.csv  (3.45 M rows, 23 lines, 266 stations)
-Output : estimated_hourly_od_matrix.csv
+Input  : data/rayli_sistem_temiz.csv  (3.45 M rows, 23 lines, 266 stations)
+Output : results/estimated_hourly_od_matrix.csv
 
 Real-world anomalies handled
 -----------------------------
@@ -42,6 +42,8 @@ Normalisation decision tree (three paths, fully vectorised)
 =============================================================================
 """
 
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 
@@ -51,9 +53,10 @@ import pandas as pd
 AM_START, AM_END = 7, 10          # morning rush  07:00 - 10:00  (inclusive)
 PM_START, PM_END = 17, 20         # evening rush  17:00 - 20:00  (inclusive)
 
-INPUT_FILE      = "rayli_sistem_temiz.csv"
-OUTPUT_FILE     = "estimated_hourly_od_matrix.csv"
-UNROUTABLE_FILE = "unroutable_single_station_lines.csv"
+ROOT            = Path(__file__).resolve().parent.parent
+INPUT_FILE      = ROOT / "data" / "rayli_sistem_temiz.csv"
+OUTPUT_FILE     = ROOT / "results" / "estimated_hourly_od_matrix.csv"
+UNROUTABLE_FILE = ROOT / "results" / "unroutable_single_station_lines.csv"
 
 COF_TOLERANCE   = 1e-4            # max allowed |row_sum - 1.0|
 

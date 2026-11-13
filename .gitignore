@@ -3,6 +3,11 @@ __pycache__/
 .venv/
 .idea/
 *.pyc
-# raw and cleaned ridership data (too large, see README)
-rayli_sistem_temiz.csv
-rayli_sistem_detay.csv
+.DS_Store
+
+# ridership data is too large for the repository, see data/README.md
+data/rayli_sistem_temiz.csv
+data/rayli_sistem_detay.csv
+
+# diagnostic output of step 2 (rows of single-station lines)
+results/unroutable_single_station_lines.csv

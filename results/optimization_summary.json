@@ -1,0 +1,136 @@
+{
+  "parameters": {
+    "target_load": 1.0,
+    "severe_load": 1.5,
+    "severe_weight": 1.0,
+    "max_trips_per_hour": 30,
+    "min_trips_per_hour": 6,
+    "lines": [
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6",
+      "M7",
+      "M8",
+      "M9",
+      "MARMARAY"
+    ],
+    "line_hours": 163
+  },
+  "baseline": {
+    "passengers_over_capacity": 172878.4,
+    "passengers_over_severe_level": 24584.2,
+    "line_hours_over_capacity": 30,
+    "max_load_ratio": 2.061,
+    "total_trips": 1802,
+    "extra_trips": 0,
+    "trips_changed": 0
+  },
+  "reschedule": {
+    "passengers_over_capacity": 108181.3,
+    "passengers_over_severe_level": 0.0,
+    "line_hours_over_capacity": 32,
+    "max_load_ratio": 1.472,
+    "total_trips": 1802,
+    "extra_trips": 0,
+    "trips_changed": 112
+  },
+  "unavoidable_at_headway_limit": {
+    "passengers_over_capacity": 1460.4,
+    "line_hours": [
+      {
+        "line": "M2",
+        "hour": 18,
+        "passengers_over_capacity": 1460.4
+      }
+    ]
+  },
+  "extra_trips_to_reach_headway_limit_result": 125,
+  "combined_budget_40": {
+    "passengers_over_capacity": 44181.3,
+    "passengers_over_severe_level": 0.0,
+    "line_hours_over_capacity": 32,
+    "max_load_ratio": 1.472,
+    "total_trips": 1842,
+    "extra_trips": 40,
+    "trips_changed": 140
+  },
+  "budget_only_40": {
+    "passengers_over_capacity": 101099.3,
+    "passengers_over_severe_level": 371.7,
+    "line_hours_over_capacity": 29,
+    "max_load_ratio": 1.526,
+    "total_trips": 1842,
+    "extra_trips": 40,
+    "trips_changed": 40
+  },
+  "match_day": {
+    "beşiktaş": {
+      "typical_kickoff_hour": 20,
+      "extra_passengers_on_modelled_lines": 83893.6,
+      "with_todays_timetable": {
+        "passengers_over_capacity": 216436.7,
+        "passengers_over_severe_level": 35275.4,
+        "line_hours_over_capacity": 33,
+        "max_load_ratio": 2.215,
+        "total_trips": 1802,
+        "extra_trips": 0,
+        "trips_changed": 0
+      },
+      "with_optimised_extra_trips": {
+        "passengers_over_capacity": 5157.0,
+        "passengers_over_severe_level": 0.0,
+        "line_hours_over_capacity": 1,
+        "max_load_ratio": 1.107,
+        "total_trips": 1952,
+        "extra_trips": 150,
+        "trips_changed": 150
+      }
+    },
+    "fenerbahçe": {
+      "typical_kickoff_hour": 19,
+      "extra_passengers_on_modelled_lines": 79387.6,
+      "with_todays_timetable": {
+        "passengers_over_capacity": 208651.3,
+        "passengers_over_severe_level": 29981.7,
+        "line_hours_over_capacity": 34,
+        "max_load_ratio": 2.11,
+        "total_trips": 1802,
+        "extra_trips": 0,
+        "trips_changed": 0
+      },
+      "with_optimised_extra_trips": {
+        "passengers_over_capacity": 2649.9,
+        "passengers_over_severe_level": 0.0,
+        "line_hours_over_capacity": 1,
+        "max_load_ratio": 1.055,
+        "total_trips": 1948,
+        "extra_trips": 146,
+        "trips_changed": 146
+      }
+    },
+    "galatasaray": {
+      "typical_kickoff_hour": 20,
+      "extra_passengers_on_modelled_lines": 134931.8,
+      "with_todays_timetable": {
+        "passengers_over_capacity": 255414.5,
+        "passengers_over_severe_level": 61575.9,
+        "line_hours_over_capacity": 32,
+        "max_load_ratio": 2.479,
+        "total_trips": 1802,
+        "extra_trips": 0,
+        "trips_changed": 0
+      },
+      "with_optimised_extra_trips": {
+        "passengers_over_capacity": 14129.8,
+        "passengers_over_severe_level": 0.0,
+        "line_hours_over_capacity": 2,
+        "max_load_ratio": 1.24,
+        "total_trips": 1969,
+        "extra_trips": 167,
+        "trips_changed": 167
+      }
+    }
+  }
+}
