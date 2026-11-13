@@ -1,0 +1,8 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.idea/
+*.pyc
+# raw and cleaned ridership data (too large, see README)
+rayli_sistem_temiz.csv
+rayli_sistem_detay.csv
